@@ -1,4 +1,4 @@
-# LibGDXModelViewer
+# ScytheModelViewer
 
 Basic model viewer in libgdx for a small game project.
 
