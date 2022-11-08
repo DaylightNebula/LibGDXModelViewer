@@ -1,5 +1,6 @@
 package daylightnebula.ktxmodelviewer.viewer
 
+import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g3d.Material
 import com.badlogic.gdx.graphics.g3d.Model
 import com.badlogic.gdx.graphics.g3d.ModelInstance
@@ -21,7 +22,7 @@ class GroundGridLines(val segmentCount: Int, val lineLength: Float) {
             val b = -a + (a * 2f * percComplete)
 
             val builder = modelBuilder.part("line_x_$seg", 1, 3, Material())
-            builder.setColor(Colors.forwardBG)
+            builder.setColor(Color.WHITE)
             builder.line(-a, 0f, b, a, 0f, b)
             builder.line(b, 0f, -a, b, 0f, a)
         }

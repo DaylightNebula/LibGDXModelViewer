@@ -1,6 +1,6 @@
 package daylightnebula.ktxmodelviewer
 
-import com.badlogic.gdx.graphics.Color
+import java.awt.Color
 
 object Colors {
     val black = Color(0f, 0f, 0f, 1f)

@@ -29,7 +29,7 @@ class ModelViewer: ApplicationListener {
         camera.position.set(3f, 3f, 3f)
         camera.lookAt(0f,0f,0f)
         camera.near = 0.001f
-        camera.far = 300f
+        camera.far = 30000f
         camera.update()
 
         // setup input
@@ -47,7 +47,8 @@ class ModelViewer: ApplicationListener {
     }
 
     override fun resize(width: Int, height: Int) {
-        
+        camera.viewportWidth = width.toFloat()
+        camera.viewportHeight = height.toFloat()
     }
 
     override fun render() {

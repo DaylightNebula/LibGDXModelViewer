@@ -6,12 +6,13 @@ import com.badlogic.gdx.graphics.Color
 import daylightnebula.ktxmodelviewer.viewer.ModelViewer
 
 fun main() {
-    val viewer = ModelViewer()
+    /*val viewer = ModelViewer()
 
     val config = LwjglApplicationConfiguration()
     config.width = 1280
     config.height = 720
     config.title = "LibGDX Model Viewer"
     config.initialBackgroundColor = Color()
-    LwjglApplication(viewer, config)
+    LwjglApplication(viewer, config)*/
+    Editor()
 }
