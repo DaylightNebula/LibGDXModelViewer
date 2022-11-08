@@ -1,0 +1,1366 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 6.3.3.8068
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Corvette___Gun_Top_Front_Barrel
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Gun_Top_Front_Turret
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Gun_Top_Front_Turret0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_teladi_plates_09b_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Top_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Bottom_Ma
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Sidepanel_box
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Pa1.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Main_Side
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Neck_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Neck_Top_Bot_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Cylender_7
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Me2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Cylender_6
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Me2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Sides_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Cylender_5
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Me2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Cylender_1
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Me2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Cylender_2
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Me2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Side_Mai
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_top_btm_PIPES
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\grilla 1.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Side_PIPES
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Top_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Side_PIPE
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Frnt_Bck_
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Bottom_PI
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Frnt_Bck_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Sides_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Top_Btm_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Radar
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesH_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___EscapePod
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Cockpit_Sidewa
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd TS_Corvette_Cockpit_Side.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Window_Frame
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Cockpit_Floor_
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd TS_Corvette_Cockpit_Top.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_Frontpanel_pip
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\grilla 3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Back
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_FIN_cent
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_FIN_Top_
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Side_PIP
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Neck_Side_PIPES
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Radar_PI
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_te.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Frnt_Bck_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t3.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Mount_Arm_Exa
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_argon_circular_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Mount_Arm_Cen
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t1.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Back_Top_Btm_Main
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_top_btm_
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Glow_Secondar
+Ka 0 0 0
+Kd 1 0.74902 0.74902
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Bsg755.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Mount_Arm_Cen0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Engine_Glow_Main
+Ka 0 0 0
+Kd 1 1 0.701961
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\Bsg755.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterWaist_Sensor_P
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_t2.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___EscapePod_TOP
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___EscapePod_Window
+Ka 0 0 0
+Kd 0.0941176 0.0941176 0.0705882
+Ks 0.0752941 0.0752941 0.0564706
+illum 2
+Ns 128
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Top_Bot_M
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_te.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___CenterBody_Front
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd metal_teladi_plates_09c_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Black
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Front_front_PIPES
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_teladi_platesI_diff.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_front_glass
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 256
+map_Kd ..\\3D Objects\\Corbeta\\Teladi_m6_pirate_NONE_GRAY.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Corvette___Gun_SideDome_Barrel
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd ..\\3D Objects\\Corbeta\\metal_ar.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_main_consol_top
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_mncltop.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_pilot_shield_mon
+Ka 0 0 0
+Kd 0 1 0
+Ks 0 0.5 0
+illum 2
+Ns 256
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_consol_panels_to
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_cnsltop.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_overhead_soft_li
+Ka 0 0 0
+Kd 0.917647 0.917647 0.917647
+Ks 0.59647 0.59647 0.59647
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_pilot_keypad
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.37647 0.37647 0.37647
+illum 2
+Ns 64
+map_Kd TS_Corvette_Bridge_pltcsl.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_back_wall
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_wall.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_interior_walls
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_intsds.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_exterior_front
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0 0 0
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_frnt.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_exterior_window_
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0 0 0
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_ridg.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_chair_base
+Ka 0 0 0
+Kd 0.501961 0.501961 0.501961
+Ks 0.25098 0.25098 0.25098
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_main_consol_floo
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_floor.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_main_consol_fron
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_mnclside.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_navigator_keypad
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.37647 0.37647 0.37647
+illum 2
+Ns 64
+map_Kd TS_Corvette_Bridge_navcnl.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_console_black
+Ka 0 0 0
+Kd 0.137255 0.137255 0.137255
+Ks 0.0686275 0.0686275 0.0686275
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_interior_ceiling
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_roof.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_interior_floor
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.0752941 0.0752941 0.0752941
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_floor.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_navigator_monito
+Ka 0 0 0
+Kd 0 0.501961 0
+Ks 0 0.25098 0
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_pilot_monitors
+Ka 0 0 0
+Kd 0 0.290196 0
+Ks 0 0.145098 0
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_gunner_keypad
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.37647 0.37647 0.37647
+illum 2
+Ns 64
+map_Kd TS_Corvette_Bridge_gnrcsl.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_gunner_monitors
+Ka 0 0 0
+Kd 0 0 0.627451
+Ks 0 0 0.313726
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_pilot_monitors_s
+Ka 0 0 0
+Kd 0 0.290196 0
+Ks 0 0.145098 0
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_red_light
+Ka 0 0 0
+Kd 1 0 0
+Ks 0.5 0 0
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_doors_switch_pan
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.301176 0.301176 0.301176
+illum 2
+Ns 64
+map_Kd TS_Corvette_Bridge_drpl.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_exterior_sides
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0 0 0
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_side.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_doors
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.376471 0.376471 0.376471
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_chair_frame_fron
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.150588 0.150588 0.150588
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_chairfrnt.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_chair_frame_side
+Ka 0 0 0
+Kd 0.752941 0.752941 0.752941
+Ks 0.150588 0.150588 0.150588
+illum 2
+Ns 16
+map_Kd TS_Corvette_Bridge_chairside.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_chair_cushen
+Ka 0 0 0
+Kd 0.501961 0.501961 0.501961
+Ks 0.401569 0.401569 0.401569
+illum 2
+Ns 256
+map_Kd TS_Corvette_Bridge_chairpad.jpg
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl HOUND___BRIDGE_chair_control_pa
+Ka 0 0 0
+Kd 0.176471 0.176471 0.176471
+Ks 0.0882353 0.0882353 0.0882353
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
