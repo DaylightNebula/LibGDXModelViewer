@@ -8,12 +8,16 @@ import daylightnebula.ktxmodelviewer.elements.ModificationsElement
 import daylightnebula.ktxmodelviewer.elements.NavigatorElement
 import daylightnebula.ktxmodelviewer.viewer.ModelViewer
 import java.awt.Graphics
+import java.awt.Rectangle
 import java.awt.event.ComponentAdapter
 import java.awt.event.ComponentEvent
+import java.awt.event.MouseEvent
+import java.awt.event.MouseListener
+import java.awt.event.MouseMotionListener
 import javax.swing.JFrame
 
 
-class Editor: JFrame() {
+class Editor: MouseListener, MouseMotionListener, JFrame() {
 
     lateinit var lwjglCanvas: LwjglAWTCanvas
     val elements = mutableListOf<EditorElement>()
@@ -44,6 +48,10 @@ class Editor: JFrame() {
         title = "Scythe Model Viewer"
         setSize(1600, 900)
 
+        // setup click listener
+        addMouseListener(this)
+        addMouseMotionListener(this)
+
         // update first frame
         updateLWJGLCanvas()
         updateElements()
@@ -61,14 +69,37 @@ class Editor: JFrame() {
 
     fun updateElements() {
         // add back all elements and resize them
-        val topInset = insets.top
-        val leftInset = insets.left
+        Globals.topInset = insets.top
+        Globals.leftInset = insets.left
+        Globals.bottomInset = insets.bottom
+        Globals.rightInset = insets.right
         elements.forEach {
-            it.resize(width, height, lwjglCanvas.canvas.x + leftInset, lwjglCanvas.canvas.y, lwjglCanvas.graphics.width, lwjglCanvas.graphics.height + topInset)
+            it.resize(width, height, lwjglCanvas.canvas.x + Globals.leftInset, lwjglCanvas.canvas.y, lwjglCanvas.graphics.width, lwjglCanvas.graphics.height + Globals.topInset)
         }
     }
 
     override fun paint(g: Graphics) {
         elements.forEach { it.redraw(g) }
     }
+
+    override fun mouseClicked(e: MouseEvent) {
+        val point = Rectangle(e.x, e.y, 1, 1)
+        elements.forEach {
+            if (it.panel.bounds.intersects(point))
+                it.click(Globals.xPos, Globals.yPos)
+        }
+        repaint()
+    }
+
+    override fun mouseMoved(e: MouseEvent) {
+        Globals.xPos = e.x
+        Globals.yPos = e.y
+        repaint()
+    }
+
+    override fun mouseEntered(e: MouseEvent?) {}
+    override fun mouseExited(e: MouseEvent?) {}
+    override fun mousePressed(e: MouseEvent?) {}
+    override fun mouseReleased(e: MouseEvent?) {}
+    override fun mouseDragged(e: MouseEvent?) {}
 }

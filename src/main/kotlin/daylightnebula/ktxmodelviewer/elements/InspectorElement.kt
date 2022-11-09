@@ -5,7 +5,7 @@ import java.awt.Graphics
 import javax.swing.JPanel
 
 class InspectorElement: EditorElement() {
-    override fun redraw(g: Graphics) {
+    override fun redraw0(g: Graphics) {
         g.color = Colors.middleBG
         g.fillRect(panel.x, panel.y, panel.width, panel.height)
     }
