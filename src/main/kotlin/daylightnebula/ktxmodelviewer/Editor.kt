@@ -3,7 +3,6 @@ package daylightnebula.ktxmodelviewer
 import com.badlogic.gdx.backends.lwjgl.LwjglAWTCanvas
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
 import daylightnebula.ktxmodelviewer.elements.EditorElement
-import daylightnebula.ktxmodelviewer.elements.InspectorElement
 import daylightnebula.ktxmodelviewer.elements.ModificationsElement
 import daylightnebula.ktxmodelviewer.elements.NavigatorElement
 import daylightnebula.ktxmodelviewer.viewer.ModelViewer
@@ -15,7 +14,6 @@ import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
 import java.awt.event.MouseMotionListener
 import javax.swing.JFrame
-
 
 class Editor: MouseListener, MouseMotionListener, JFrame() {
 
@@ -30,7 +28,6 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
 
         // setup nativgator
         elements.add(NavigatorElement())
-        elements.add(InspectorElement())
         elements.add(ModificationsElement())
 
         // setup resize call
@@ -62,7 +59,7 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
         lwjglCanvas.canvas.setBounds(
             (width * 0.175f).toInt(),
             0,
-            (width * 0.65).toInt(),
+            (width * 0.825).toInt(),
             (height * 0.65).toInt()
         )
     }

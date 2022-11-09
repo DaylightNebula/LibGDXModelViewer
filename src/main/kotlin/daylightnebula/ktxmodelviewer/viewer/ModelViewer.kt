@@ -41,6 +41,7 @@ class ModelViewer: ApplicationListener {
     fun loadModel(path: String) {
         if (!File(path).exists()) return
 
+
         model?.dispose()
         model = ObjLoader().loadModel(Gdx.files.absolute(path))
         modelInstance = ModelInstance(model)
