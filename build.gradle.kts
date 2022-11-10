@@ -8,6 +8,7 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -19,6 +20,7 @@ dependencies {
     implementation("com.badlogicgames.gdx:gdx:1.11.0")
     implementation("com.badlogicgames.gdx:gdx-backend-lwjgl:1.11.0")
     implementation("com.badlogicgames.gdx:gdx-platform:1.11.0:natives-desktop")
+    implementation("com.github.mgsx-dev.gdx-gltf:gltf:2.1.0")
 }
 
 tasks.getByName<Test>("test") {

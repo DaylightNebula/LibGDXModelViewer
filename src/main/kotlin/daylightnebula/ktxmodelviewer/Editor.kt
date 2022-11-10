@@ -23,7 +23,7 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
     init {
         // setup libgdx canvas
         val config = LwjglApplicationConfiguration()
-        lwjglCanvas = LwjglAWTCanvas(ModelViewer(), config)
+        lwjglCanvas = LwjglAWTCanvas(ModelViewer.INSTANCE, config)
         contentPane.add(lwjglCanvas.canvas)
 
         // setup nativgator

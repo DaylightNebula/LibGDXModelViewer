@@ -2,16 +2,36 @@ package daylightnebula.ktxmodelviewer.elements
 
 import daylightnebula.ktxmodelviewer.Colors
 import daylightnebula.ktxmodelviewer.ui.ButtonElement
-import java.awt.Color
-import java.awt.Component
+import daylightnebula.ktxmodelviewer.viewer.ModelViewer
 import java.awt.Graphics
-import javax.swing.JPanel
+import java.io.File
+import javax.swing.JFileChooser
+import javax.swing.JFileChooser.APPROVE_OPTION
+import javax.swing.filechooser.FileFilter
 
 class NavigatorElement: EditorElement() {
 
+    val importCallback = {
+        // setup file chooser
+        val chooser = JFileChooser()
+        chooser.currentDirectory = File(System.getProperty("user.dir"))
+        chooser.fileFilter = object : FileFilter() {
+            override fun accept(file: File): Boolean { return file.isDirectory || file.name.endsWith(".gltf") }
+            override fun getDescription(): String { return "GLTF Model Files" }
+        }
+
+        // get result
+        val result = chooser.showOpenDialog(null)
+        val target = chooser.selectedFile
+
+        // if result is positive, open the target
+        if (result == APPROVE_OPTION) {
+            ModelViewer.INSTANCE.modelsToImport.add(target)
+        }
+    }
+
     val newCallback = { println("New clicked") }
-    val importCallback = { println("Import clicked") }
-    val openCallback = { println("Open clicked") }
+    val openCallback = { println("Import clicked") }
     val saveCallback = { println("Save clicked") }
 
     val newButton = ButtonElement(this,
@@ -51,7 +71,7 @@ class NavigatorElement: EditorElement() {
     override fun resize(winWidth: Int, winHeight: Int, gX: Int, gY: Int, gWidth: Int, gHeight: Int) {
         panel.setBounds(
             0, 0,
-            gX, gHeight
+            gX, winHeight
         )
     }
 }
