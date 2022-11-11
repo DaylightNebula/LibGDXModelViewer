@@ -3,19 +3,16 @@ package daylightnebula.ktxmodelviewer
 import com.badlogic.gdx.backends.lwjgl.LwjglAWTCanvas
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
 import daylightnebula.ktxmodelviewer.elements.EditorElement
-import daylightnebula.ktxmodelviewer.elements.ModificationsElement
+import daylightnebula.ktxmodelviewer.elements.InspectorElement
 import daylightnebula.ktxmodelviewer.elements.NavigatorElement
+import daylightnebula.ktxmodelviewer.ui.TextInputManager
 import daylightnebula.ktxmodelviewer.viewer.ModelViewer
 import java.awt.Graphics
 import java.awt.Rectangle
-import java.awt.event.ComponentAdapter
-import java.awt.event.ComponentEvent
-import java.awt.event.MouseEvent
-import java.awt.event.MouseListener
-import java.awt.event.MouseMotionListener
+import java.awt.event.*
 import javax.swing.JFrame
 
-class Editor: MouseListener, MouseMotionListener, JFrame() {
+class Editor: MouseListener, MouseMotionListener, KeyListener, JFrame() {
 
     lateinit var lwjglCanvas: LwjglAWTCanvas
     val elements = mutableListOf<EditorElement>()
@@ -28,7 +25,7 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
 
         // setup nativgator
         elements.add(NavigatorElement())
-        elements.add(ModificationsElement())
+        elements.add(InspectorElement())
 
         // setup resize call
         addComponentListener(object : ComponentAdapter() {
@@ -48,6 +45,7 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
         // setup click listener
         addMouseListener(this)
         addMouseMotionListener(this)
+        addKeyListener(this)
 
         // update first frame
         updateLWJGLCanvas()
@@ -77,14 +75,22 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
 
     override fun paint(g: Graphics) {
         elements.forEach { it.redraw(g) }
+        Globals.mouseButtonDown = -1
     }
 
     override fun mouseClicked(e: MouseEvent) {
+        // pass mouse click to elements
         val point = Rectangle(e.x, e.y, 1, 1)
         elements.forEach {
             if (it.panel.bounds.intersects(point))
                 it.click(Globals.xPos, Globals.yPos)
         }
+
+        // set mouse button and deselect current text input tag
+        Globals.mouseButtonDown = e.button
+        TextInputManager.deselectTag()
+
+        // repaint frame
         repaint()
     }
 
@@ -94,9 +100,16 @@ class Editor: MouseListener, MouseMotionListener, JFrame() {
         repaint()
     }
 
+    override fun keyReleased(e: KeyEvent) {
+        TextInputManager.manageKey(e.keyChar)
+        repaint()
+    }
+
     override fun mouseEntered(e: MouseEvent?) {}
     override fun mouseExited(e: MouseEvent?) {}
     override fun mousePressed(e: MouseEvent?) {}
     override fun mouseReleased(e: MouseEvent?) {}
     override fun mouseDragged(e: MouseEvent?) {}
+    override fun keyTyped(e: KeyEvent?) {}
+    override fun keyPressed(e: KeyEvent?) {}
 }

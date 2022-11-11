@@ -30,9 +30,30 @@ class NavigatorElement: EditorElement() {
         }
     }
 
+    val saveCallback = {
+        // get model data, cancel if none found
+        val modelData = ModelViewer.INSTANCE.modelData
+
+        // setup file chooser
+        val chooser = JFileChooser()
+        chooser.currentDirectory = File(System.getProperty("user.dir"))
+        chooser.fileFilter = object : FileFilter() {
+            override fun accept(file: File): Boolean { return file.isDirectory || file.name.endsWith(".scythe") }
+            override fun getDescription(): String { return "SCYTHE Model Files" }
+        }
+
+        // get result
+        val result = chooser.showSaveDialog(null)
+        val target = chooser.selectedFile
+
+        // if result is positive, open the target
+        if (result == APPROVE_OPTION) {
+            modelData?.compressToFile(target)
+        }
+    }
+
     val newCallback = { println("New clicked") }
     val openCallback = { println("Import clicked") }
-    val saveCallback = { println("Save clicked") }
 
     val newButton = ButtonElement(this,
         "New", 0f, 0f, 0.25f, 0.085f,

@@ -2,6 +2,7 @@ package daylightnebula.ktxmodelviewer.viewer
 
 import com.badlogic.gdx.ApplicationListener
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.PerspectiveCamera
 import com.badlogic.gdx.graphics.g3d.Environment
@@ -29,6 +30,7 @@ class ModelViewer: ApplicationListener {
     var modelInstance: ModelInstance? = null
 
     val modelsToImport = mutableListOf<File>()
+    var modelData: ModelData? = null
 
     companion object {
         val INSTANCE = ModelViewer()
@@ -61,6 +63,7 @@ class ModelViewer: ApplicationListener {
         model = GLTFLoader().load(Gdx.files.absolute(path.absolutePath), true).scene.model
 
         modelInstance = ModelInstance(model)
+        modelData = ModelData(path, modelInstance!!)
     }
 
     override fun resize(width: Int, height: Int) {

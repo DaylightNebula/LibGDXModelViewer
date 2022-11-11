@@ -21,6 +21,9 @@ dependencies {
     implementation("com.badlogicgames.gdx:gdx-backend-lwjgl:1.11.0")
     implementation("com.badlogicgames.gdx:gdx-platform:1.11.0:natives-desktop")
     implementation("com.github.mgsx-dev.gdx-gltf:gltf:2.1.0")
+
+    // json
+    implementation("org.json:json:20220924")
 }
 
 tasks.getByName<Test>("test") {
