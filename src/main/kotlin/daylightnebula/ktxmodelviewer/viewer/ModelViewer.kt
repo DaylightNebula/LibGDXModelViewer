@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.g3d.shaders.DefaultShader
 import com.badlogic.gdx.graphics.g3d.utils.DefaultShaderProvider
 import com.badlogic.gdx.utils.JsonReader
 import net.mgsx.gltf.loaders.gltf.GLTFLoader
+import org.json.JSONObject
 import java.io.File
 
 class ModelViewer: ApplicationListener {
@@ -29,6 +30,7 @@ class ModelViewer: ApplicationListener {
     var model: Model? = null
     var modelInstance: ModelInstance? = null
 
+    var loadFromTMP = false
     val modelsToImport = mutableListOf<File>()
     var modelData: ModelData? = null
 
@@ -37,10 +39,13 @@ class ModelViewer: ApplicationListener {
     }
 
     override fun create() {
+        // setup shader
         val shaderConfig = DefaultShader.Config()
         shaderConfig.defaultCullFace = GL20.GL_NONE
         shaderConfig.numBones = 255
         batch = ModelBatch(DefaultShaderProvider(shaderConfig))
+
+        // setup grid lines
         gridLines = GroundGridLines(4, 2f)
 
         environment = Environment()
@@ -66,6 +71,28 @@ class ModelViewer: ApplicationListener {
         modelData = ModelData(path, modelInstance!!)
     }
 
+    fun loadTMP() {
+        // get tmp folder
+        val tmpFolder = File(System.getProperty("user.dir"), "tmp")
+
+        // replace model with new one
+        model?.dispose()
+        model = GLTFLoader().load(Gdx.files.absolute(tmpFolder.absolutePath + "/model.gltf"), true).scene.model
+        modelInstance = ModelInstance(model)
+
+        // create new model data from json
+        val jsonFile = File(tmpFolder, "data.json")
+        modelData = ModelData(modelInstance!!, JSONObject(jsonFile.readText()))
+        println("Model data after load ${modelData}")
+    }
+
+    fun clear() {
+        modelData = null
+        modelInstance = null
+        model?.dispose()
+        model = null
+    }
+
     override fun resize(width: Int, height: Int) {
         camera.viewportWidth = width.toFloat()
         camera.viewportHeight = height.toFloat()
@@ -78,11 +105,20 @@ class ModelViewer: ApplicationListener {
             modelsToImport.clear()
         }
 
+        // load from tmp if necessary
+        if (loadFromTMP) {
+            loadTMP()
+            loadFromTMP = false
+        }
+
+        // update camera
         camera.update()
 
+        // clear window
         Gdx.gl.glViewport(0, 0, Gdx.graphics.width, Gdx.graphics.height)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT or GL20.GL_DEPTH_BUFFER_BIT)
 
+        // render everything
         batch.begin(camera)
         batch.render(gridLines.instance, environment)
         if (modelInstance != null) batch.render(modelInstance!!, environment)

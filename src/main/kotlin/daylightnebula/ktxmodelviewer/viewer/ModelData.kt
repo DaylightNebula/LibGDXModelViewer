@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g3d.ModelInstance
 import com.badlogic.gdx.graphics.g3d.model.Animation
 import com.badlogic.gdx.math.Quaternion
 import com.badlogic.gdx.math.Vector3
+import daylightnebula.ktxmodelviewer.Utils
 import daylightnebula.ktxmodelviewer.ui.TextInputManager
 import daylightnebula.ktxmodelviewer.ui.TextInputType
 import org.json.JSONArray
@@ -30,6 +31,16 @@ class ModelData(
     ) {
         // copy model file to temporary folder
         modelFile.copyTo(File(System.getProperty("user.dir"), "tmp/model.gltf"), true)
+    }
+
+    constructor(instance: ModelInstance, json: JSONObject): this(
+        File(System.getProperty("user.dir"), "tmp/model.gltf"),
+        Utils.convertJsonArrayToVec3(json.getJSONArray("position")),
+        Utils.convertJsonArrayToVec3(json.getJSONArray("rotation")),
+        Utils.convertJsonArrayToVec3(json.getJSONArray("scale")),
+        instance.animations, instance.materials
+    ) {
+        updateObjectData()
     }
 
     init {
@@ -73,18 +84,16 @@ class ModelData(
         saveJSONToTMP()
     }
 
-    fun convertVec3ToJsonArray(vec: Vector3): JSONArray {
-        return JSONArray().put(vec.x).put(vec.y).put(vec.z)
-    }
+
 
     fun saveJSONToTMP() {
         // create json
         val json = JSONObject()
 
         // save basic data
-        json.put("position", convertVec3ToJsonArray(position))
-        json.put("rotation", convertVec3ToJsonArray(rotation))
-        json.put("scale", convertVec3ToJsonArray(scale))
+        json.put("position", Utils.convertVec3ToJsonArray(position))
+        json.put("rotation", Utils.convertVec3ToJsonArray(rotation))
+        json.put("scale", Utils.convertVec3ToJsonArray(scale))
 
         // convert json to string and then save it to the temporary folder
         val jsonStr = json.toString(1)

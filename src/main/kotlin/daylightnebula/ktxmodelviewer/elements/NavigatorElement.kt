@@ -1,12 +1,14 @@
 package daylightnebula.ktxmodelviewer.elements
 
 import daylightnebula.ktxmodelviewer.Colors
+import daylightnebula.ktxmodelviewer.Utils
 import daylightnebula.ktxmodelviewer.ui.ButtonElement
 import daylightnebula.ktxmodelviewer.viewer.ModelViewer
 import java.awt.Graphics
 import java.io.File
 import javax.swing.JFileChooser
 import javax.swing.JFileChooser.APPROVE_OPTION
+import javax.swing.JOptionPane
 import javax.swing.filechooser.FileFilter
 
 class NavigatorElement: EditorElement() {
@@ -52,8 +54,41 @@ class NavigatorElement: EditorElement() {
         }
     }
 
-    val newCallback = { println("New clicked") }
-    val openCallback = { println("Import clicked") }
+    val openCallback = {
+        // setup file chooser
+        val chooser = JFileChooser()
+        chooser.currentDirectory = File(System.getProperty("user.dir"))
+        chooser.fileFilter = object : FileFilter() {
+            override fun accept(file: File): Boolean { return file.isDirectory || file.name.endsWith(".scythe") }
+            override fun getDescription(): String { return "SCYTHE Model Files" }
+        }
+
+        // get result
+        val result = chooser.showOpenDialog(null)
+        val target = chooser.selectedFile
+
+        if (result == APPROVE_OPTION) {
+            // clear tmp folder
+            val tmpFolder = File(System.getProperty("user.dir"), "tmp")
+            tmpFolder.mkdirs()
+            tmpFolder.listFiles()?.forEach { it.deleteRecursively() }
+
+            // unzip target to tmp folder
+            Utils.unzip(target, tmpFolder)
+
+            // tell model viewer to open from tmp
+            ModelViewer.INSTANCE.loadFromTMP = true
+        }
+    }
+
+    val newCallback = {
+        // ask the user if they are sure they want to clear
+        val result = JOptionPane.showConfirmDialog(null, "Are you sure you want to clear and start new?  Any unsaved progress will be lost.")
+
+        // if the user confirms they want to clear, save
+        if (result == APPROVE_OPTION)
+            ModelViewer.INSTANCE.clear()
+    }
 
     val newButton = ButtonElement(this,
         "New", 0f, 0f, 0.25f, 0.085f,
